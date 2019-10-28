@@ -1,0 +1,113 @@
+/* Large Devices (Medium Desktops & Laptops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+	#home-heading-1 {
+	color: #fff;
+	font-size: 22px;
+	font-weight: 300;
+	font-family: "Lato", sans-serif;
+	margin: 0;
+	text-transform: uppercase;
+	word-spacing: 3px;
+	line-height: 24px;
+	position: relative;
+	top: 135px;
+	left: 0px;
+}
+	
+#koperasi {
+
+	font-size: 22px;
+	font-weight: 400;
+	color: #000;
+
+}
+
+	ul.navbar-nav > li > a {
+
+	font-family: "Lato", sans-serif;
+	color: #000 !important;
+	margin-right: 10px;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+
+
+}
+
+	
+#about-heading
+
+/* About the Cooperative*/
+	{
+	margin: 50px 10px 0px;
+	font-size: 40px;
+	font-weight: 200;
+	line-height: 45px;
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	left: 360px;
+
+}
+
+#about-heading h2 span
+
+/*Cooperative*/
+	{
+	font-size: 44px;
+	font-weight: 500;
+}	
+	
+/* Iframe */
+	
+#youtube {
+		width: 400px;
+		height: 225px;
+		position: relative;
+		top: 5px;
+		left: 60px;
+	}
+	
+#history-text {
+
+	margin: 40px 20px;
+	font-size: 10px;
+	padding-right: 15px;
+	content: 10px 10px;
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
+/* Medium (Landscape Tablets & Small Desktops*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+	
+	#home-heading-1 {
+		color: green;
+	}
+	
+}
