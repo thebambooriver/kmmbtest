@@ -6,7 +6,7 @@ $(function ($) {
 	$(document).ready(function () {
 
 		// hide .navbar first
-		$("#hiddennav").hide();
+		//$("#hiddennav").hide();
 
 		// fade in .navbar
 		$(function ($) {
@@ -37,6 +37,19 @@ $(window).scroll(function () {
 	}
 	position = scroll;
 });
+
+/* =================================
+Responsive Tabs
+================================= */
+function openInfotab(tabName) {
+  var i;
+  var x = document.getElementsByClassName("infotab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+
 
 /* =================================
 Team

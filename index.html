@@ -6,7 +6,7 @@
 	<!-- Important Meta Tags -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Internet Explorer Edge, Windows 10 Compatibility -->
-	 <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Responsive mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Responsive mobile -->
 
 	<!-- Title -->
 	<title>KMMB | Malaysian Malayalee Cooperative</title>
@@ -27,25 +27,29 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap/bootstrap.css">
 
+	<!-- Tabsy CSS -->
+
+	<link rel="stylesheet" href="css/tabsy/tabsy.css">
+
 	<!-- Owl Carousel CSS -->
 	<link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl-carousel/owl.theme.default.min.css">
 
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="css/style.css">
-	
+
 	<!-- Responsive CSS -->
 	<link rel="stylesheet" href="css/responsive.css">
-	
+
 
 </head>
 
 <body>
-<!-- Navigation Bar -->
+	<!-- Navigation Bar -->
 
 	<nav class="navbar navbar-expand-lg navbar-dark bg-custom fixed-top" id="hiddennav">
 
-	
+
 		<!-- Logo -->
 		<div id="logoborder"><a class="navbar-brand " id="navlogo" href="#home">
 
@@ -70,7 +74,7 @@
 				<li class="nav-item"><a href="http://www.mymalayaleeco-op.com/#about" class="nav-link">About</a></li>
 				<li class="nav-item"><a href="http://www.mymalayaleeco-op.com/#team" class="nav-link">Team</a></li>
 				<li class="nav-item"><a href="http://www.mymalayaleeco-op.com/#contact" class="nav-link">Contact</a></li>
-				
+
 			</ul>
 
 		</div>
@@ -80,66 +84,61 @@
 
 	<!-- Navigation Bar ends-->
 
-<!-- Home -->
+	<!-- Home -->
 	<section id="home">
 
 
-			<!-- Home Content -->
-			<div id="home-content">
-				<div id="home-content-inner" class="text-center">
+		<!-- Home Content -->
+		<div id="home-content">
+			<div id="home-content-inner" class="text-center">
 
-					<div id="home-heading">
+				<div id="home-heading">
 
-						<h1 id="home-heading-1"> Sustainable returns towards a brighter future </h1>
+					<h1 id="home-heading-1"> Sustainable returns towards a brighter future </h1>
 
-
-					</div>
 
 				</div>
 
-
-
 			</div>
 
-			<!-- Arrow Down -->
-			<a href="#about" id="arrow-down">
-				<i class="fas fa-angle-down"></i>
 
-			</a>
-		
+
+		</div>
+
+		<!-- Arrow Down -->
+		<a href="#about" id="arrow-down">
+			<i class="fas fa-angle-down"></i>
+
+		</a>
+
 	</section>
 	<!-- Home ends-->
 	<!-- filler Break-->
 
-		<div class="filler-break"></div>
+	<div class="filler-break"></div>
 
 	<!-- filler ends -->
-<section id="about">
+	<section id="about">
+
 
 		<div id="about-front">
-
-			<!-- About Row 1 -->
-
-			<div class="content-box-md">
+			<div class="content-box-lg">
+				<!-- not a real bootstrap class -->
 				<div class="container">
+					<!-- About Row - Heading -->
 					<div class="row">
-						<div class="col-12">
-
-
+						<div class="col-md-12">
 							<div id="about-heading">
 								<!-- <h>Who We Are</h> -->
 								<h2>About the<br><span><strong>Cooperative</strong></span></h2>
 							</div>
-
 						</div>
-
-
 					</div>
 				</div>
 			</div>
 			<div class="space-filler-1"></div>
 
-			<!-- About Row 2 -->
+			<!-- About Row - Content -->
 
 			<div class="content-box-lg">
 
@@ -148,63 +147,99 @@
 					<div class="row">
 
 						<!-- Column 1 -->
-						<div class="col-6">
+						<div class="col-md-6" >
 
-							<iframe
-							 class="iframe-border" id="youtube" width="560" height="315" src="https://www.youtube-nocookie.com/embed/-zRK3jPBTHo"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<iframe class="iframe-border" id="youtube" width="560" height="315" src="https://www.youtube-nocookie.com/embed/-zRK3jPBTHo" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 						</div>
 
 						<!-- Column 2 -->
-						<div class="col-6">
+						<div id="about-right-bg" class="col-md-6">
+						
+						<div id="about-buttons" class="text-center">
+  <button class="btn-selector btn-about" onclick="openInfotab('AboutUs')">About</button>
+  <button class="btn-selector btn-about" onclick="openInfotab('Message')">Message</button>
+  <button class="btn-selector btn-about" onclick="openInfotab('Values')">Values</button>
+</div>
+							
+							<div id="AboutUs" class="infotab text-center">
+  										<h3>About Us</h3>
+										<p>Koperasi Malayalee Malaysia Berhad was officially registered in 2010. It was set up as a hybrid co-operative, banding together the common interests of the Malaysian Malayalee community, to look into areas of investment as well as to support small business. In 2019, KMMB embarked on a rebranding and is now re-launched as an investment co-operative which functions as a community based socio-economic platform. Its main purpose to deliver long-term sustainable returns to its members annually.</p>
 
-							<div id="history-text">
-								<p>Koperasi Malayalee Malaysia Berhad (KMMB) was officially launched in 2009
-								under the banner of the All Malaysia Malayalee Association (AMMA). It was set
-								up as a hybrid co-operative, banding together the common interests of the
-								Malaysian Malayalee community, to look into areas of investment as well as to
-								support small business. Registered under the Cooperative Commission of Malaysia (Suruhanjaya Koperasi Malaysia) since 2010, KMMB has 412 members to-date from all over Malaysia.</p>
+										<div class="text-center">
 
-								<p>Our core values of ‘Transparency’, ‘Ethical Practices,’ and ‘Compliance,’ shape the way we
-								run the cooperative and represent KMMB’s highest priorities and
-								fundamental driving force.</p>
+											<div id="history-btn">
 
-							</div>
+												<a class="btn btn-general btn-history" href="http://www.mymalayaleeco-op.com/about.html" title="Read More" role="button">Read More</a>
 
-							<div class="text-center">
-
-								<div id="history-btn">
-
-									<a class="btn btn-general btn-history" href="about.html" title="Read More" role="button">Read More</a>
-
-								</div>
-
-
-
+											</div>
+</div>
 
 							</div>
-			</div>
+
+<div id="Message" class="infotab" style="display:none">
+  													
+  													<h3 class="text-center">Chairman's Message</h3><br>
+	<p class="text-center">Greetings from the Malaysian Malayalee Co-Operative!</p>
+
+	<p class="text-center">Welcome to the Malaysian Malayalee Co-Operative website.</p>
+
+<p class="text-center">The Malaysian Malayalee Co—Operative which is registered with the Co-Operatives
+Commission of Malaysia, is the first economic arm of its kind formed exclusively for the Malayalee community of Malaysia. Our primary objective is to establish an investment vehicle through which Malaysian Malayalees by membership would reap economic benefits.<br>
+</p>
+
+													<div class="text-center">
+
+														<div id="chairman-btn">
+
+															<a class="btn btn-general btn-history" href="http://www.mymalayaleeco-op.com/chairman.html" title="Read More" role="button">Read More</a>
+
+														</div>
+	</div>
+</div>
+
+<div id="Values" class="infotab text-center" style="display:none">
+  													<h3>Our Values</h3>
+													<p>Our core values of ‘Transparency,’ ‘Ethical Practices,’ and ‘Compliance,’ shape the way we run the cooperative and represent KMMB’s highest priorities and fundamental driving force.</p>
+
+													<div class="text-center">
+
+														<div id="values-btn">
+
+															<a class="btn btn-general btn-history" href="http://www.mymalayaleeco-op.com/about.html" title="Read More" role="button">Read More</a>
+
+														</div>
+
+													</div>
+</div>
+							
+							
+
+							
+						</div>
+
+
 
 					</div>
 				</div>
 			</div>
 		</div>
-
+	
 
 
 
 
 	</section>
 	<!-- About ends-->
-	
-		<!-- filler -->
 
-		
-		<div class="filler-break"></div>
+	<!-- filler -->
+
+
+	<div class="filler-break"></div>
 
 	<!-- filler ends -->
 
-<!-- Statement 1 -->
+	<!-- Statement 1 -->
 	<section class="statement">
 
 		<div id="statement-1">
@@ -242,11 +277,11 @@
 	<!-- Statement 1 ends-->
 	<!-- filler -->
 
-		<div class="filler-break"></div>
+	<div class="filler-break"></div>
 
 	<!-- filler ends -->
 
-<!-- Team Section -->
+	<!-- Team Section -->
 
 	<section id="team">
 
@@ -306,7 +341,7 @@
 
 										<div class="team-member-info text-center">
 
-											<h6>Mr Manohur Kumaran</h6>
+											<h6>Dr Manohur Kumaran</h6>
 											<p>Secretary</p>
 
 										</div>
@@ -377,7 +412,7 @@
 										</div>
 									</div>
 								</div>
-								
+
 								<!-- Member 07 -->
 								<div class="team-member">
 
@@ -428,7 +463,7 @@
 										</div>
 									</div>
 								</div>
-								
+
 								<!-- Member 10 -->
 								<div class="team-member">
 
@@ -445,7 +480,7 @@
 										</div>
 									</div>
 								</div>
-								
+
 								<!-- Member 11 -->
 								<div class="team-member">
 
@@ -462,7 +497,7 @@
 										</div>
 									</div>
 								</div>
-								
+
 								<!-- Member 12 -->
 								<div class="team-member">
 
@@ -493,13 +528,13 @@
 
 	</section>
 	<!-- Team Section ends-->
-<!-- filler -->
+	<!-- filler -->
 
-		<div class="filler-break"></div>
+	<div class="filler-break"></div>
 
 	<!-- filler ends -->
 
-<!-- Statement 2 -->
+	<!-- Statement 2 -->
 	<section class="statement">
 
 
@@ -528,12 +563,12 @@
 
 	</section>
 	<!-- Statement 2 ends-->
-<!-- filler -->
+	<!-- filler -->
 
-		<div class="filler-break"></div>
+	<div class="filler-break"></div>
 
 	<!-- filler ends -->
-<!-- Contact Section -->
+	<!-- Contact Section -->
 
 	<section id="contact">
 
@@ -676,7 +711,7 @@
 
 	</section>
 	<!-- Contact Section ends -->
-<!-- Map Section -->
+	<!-- Map Section -->
 	<section id="google-map">
 		<div class="container-fluid">
 			<div class="row">
@@ -687,7 +722,7 @@
 
 	<!-- Map Section ends -->
 
-<!-- Footer -->
+	<!-- Footer -->
 	<section>
 
 		<footer class="text-center">
@@ -707,9 +742,9 @@
 	</section>
 
 	<!-- Footer ends-->
-	
-	
-<!-- JQuery-3.4.1 -->
+
+
+	<!-- JQuery-3.4.1 -->
 	<script src="js/jquery-3.4.1.min.js"></script>
 
 	<!-- Bootstrap JS -->
@@ -729,24 +764,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

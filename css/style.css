@@ -138,6 +138,7 @@ Home
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
+	max-width: 100%;
 	min-height: 100%;
 	z-index: -1;
 }
@@ -213,6 +214,32 @@ Buttons
 	border: 2px solid #071D49;
 }
 
+.btn-selector {
+	font-family: 'Lato', sans-serif;
+	border-radius: 2px;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin: 10px 0px;
+	padding: 8px 16px 8px 16px;
+
+	-webkit-transition: all .5s;
+	transition: all .5s;
+}
+
+.btn-about {
+	color: #fff;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #071D49;
+	border: 2px solid #D50032;
+}
+
+.btn-about:hover,
+.btn-about:focus {
+	color: #000;
+	background-color: #D50032;
+	border: 2px solid #071D49;
+}
 /* =================================
 Arrow Down
 ================================= */
@@ -336,10 +363,20 @@ About
 
 #youtube {
 
-	margin-top: 45px;
+	margin-top: 105px;
 	position: relative;
-	right: 25px;
+	right: 100px;
 }
+
+#about-buttons {
+	
+	
+	margin: 10px 10px;
+	padding: 0px 0px;
+	
+}
+
+
 #history-text {
 
 	margin: 40px 20px;
@@ -352,9 +389,33 @@ About
 	margin-top: 20px;
 }
 
+#about-text {
+	
+	border-top: 1px solid #E8EAE7;
+	
+}
+
+#about-chairman-header {
+	
+	margin-top: 20px;
+	
+}
+
+#chairman-text {
+	
+	margin-top: 25px;
+	border-top: 1px solid #fff;
+	
+}
 #values-header {
 	
 	margin-top: 20px;
+	
+}
+
+#values-row {
+	
+	border-top: 1px solid #E8EAE7;
 	
 }
 
@@ -692,6 +753,25 @@ Footer
 	margin-top: 20px;
 
 }
+
+
+/* =================================
+Chairman Page
+================================= */
+
+#chairman-img {
+	
+	display: inline-block;
+	float: right;
+	margin-left: 50px;
+	margin-top: 40px;
+    border: 4px solid RGBA(213, 0, 50, 1);
+	box-shadow: 0px 0px 3px 6px RGBA(7, 29, 73, 1);
+
+	
+}
+
+
 
 /* end document */
 
