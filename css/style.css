@@ -26,10 +26,20 @@ HTML, Body Generic
 html,
 body {
 	height: 100%;
+
 }
 
 body {
 	color: #071D49;
+
+/* Responsive type : Minimum 16px, grows at half the rate of screen growth */
+
+	font-size: calc(16px + 0.5vw);
+	
+/*Line-height based on font-size */
+	
+	line-height: calc(1.1em + 0.5vw);
+	
 }
 
 h1,
@@ -54,192 +64,104 @@ section {
 }
 
 /* =================================
-Navigation 
+Generic Styles - Content Boxes
 ================================= */
 
-
-.navbar {
-	padding: 10px 8px 10px 15px;
-
-
+.content-box-lg {
+	
+	padding: 2vh 10vw;
+	
 }
 
-#hiddennav {
 
+
+/* =================================
+Generic Styles - Filler
+================================= */
+.filler-break {
 	height: 100px;
-	-webkit-box-shadow: 0 8px 6px -9px #999;
-	box-shadow: 0 8px 6px -9px #999;
+	width: auto;
+	background-color: #071D49;
 
 }
 
-#logoborder {
+.space-filler-1 {
 
-	border-color: white;
-
-}
-
-#navlogo {
-
+	background-color: #071D49;
+	min-height: 2.5vh;
+	min-width: 90vw;
+	margin: 0.5vh;
 	position: relative;
-	top: 45px;
-	overflow-x: visible;
-}
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 
-
-#navlogo-img {
-
-
-	-webkit-box-shadow: -1px 3px 6px -2px RGBA(153, 153, 153, 0.5);
-	box-shadow: -1px 3px 6px -2px RGBA(153, 153, 153, 0.5);
 
 }
 
-#koperasi {
+/* =================================
+Generic Styles - Buttons
+================================= */
 
-	font-size: 26px;
-	font-weight: 400;
-	color: #000;
-
-}
-
-.bg-custom {
-
-	background-color: #fff;
-}
-
-ul.navbar-nav > li > a {
-
-	font-family: "Lato", sans-serif;
-	color: #000 !important;
-	margin-right: 25px;
-	font-size: 26px;
-	font-weight: 400;
+.btn-general {
+	font-family: 'Lato', sans-serif;
+	border-radius: 2vh;
+	font-size: calc(14px + 0.1vh);
 	text-transform: uppercase;
-	letter-spacing: 1px;
+	
 
-
+	-webkit-transition: all .5s;
+	transition: all .5s;
 }
 
-ul.navbar-nav > li > a:hover,
-ul.navbar-nav > li > a:focus {
+.btn-blue {
+	color: #fff;
+	margin-top: 20px;
+	background-color: #071D49;
+	border: 2px solid #D50032;
+}
 
-	color: #D50032 !important;
-
+.btn-blue:hover,
+.btn-blue:focus {
+	color: #000;
+	background-color: #D50032;
+	border: 2px solid #071D49;
 }
 
 /* =================================
 Home
 ================================= */
 
-#home {
-	
-	background: url("../img/about/klccview.jpg");
-	background-repeat: no-repeat;
+#home-bg {
+	background-image: url("../img/about/klccview.jpg");
 	background-size: cover;
-	background-position: center;
+	background-repeat: no-repeat;
 	background-attachment: fixed;
+	background-position: center center;
 	max-width: 100%;
-	min-height: 100%;
-	z-index: -1;
+	min-height: 100vh;
+	background-color: #071D49; 
+	z-index: 1;
+}
+
+#home-heading {
+	position: relative;
 }
 
 #home-heading-1 {
 	color: #fff;
-	font-size: 1.8vw;
+	font-size: 3vh;
 	font-weight: 300;
 	font-family: "Lato", sans-serif;
-	margin: 0;
+	margin-right: 25px;
 	text-transform: uppercase;
-	word-spacing: 3px;
-	line-height: 24px;
-	position: relative;
-	top: 130px;
-	left: -170px;
+	word-spacing: 4px;
+	line-height: calc(1.1em + 0.5vw);
+	position: absolute;
+	top: 10vh;
+	left: 10vw;
 }
 
-#home-heading-2 {
-	color: #fff;
-	font-size: 52px;
-	font-weight: 700;
-	text-transform: capitalize;
-	margin: 0;
-	display: inline-block;
-	text-align: right;
-	position: relative;
-	top: 150px;
-	left: 600px;
-}
-
-/* =================================
-Buttons
-================================= */
-
-.btn-general {
-	font-family: 'Lato', sans-serif;
-	border-radius: 28px;
-	font-size: 16px;
-	text-transform: uppercase;
-	margin: 0 6px;
-	padding: 12px 24px 12px 24px;
-
-	-webkit-transition: all .5s;
-	transition: all .5s;
-}
-
-.btn-home {
-	color: #fff;
-	margin-top: 20px;
-	background-color: #071D49;
-	border: 2px solid #D50032;
-}
-
-.btn-home:hover,
-.btn-home:focus {
-	color: #000;
-	background-color: #D50032;
-	border: 2px solid #071D49;
-}
-
-.btn-history {
-	color: #fff;
-	margin-top: 20px;
-	background-color: #071D49;
-	border: 2px solid #D50032;
-}
-
-.btn-history:hover,
-.btn-history:focus {
-	color: #000;
-	background-color: #D50032;
-	border: 2px solid #071D49;
-}
-
-.btn-selector {
-	font-family: 'Lato', sans-serif;
-	border-radius: 2px;
-	font-size: 14px;
-	text-transform: uppercase;
-	margin: 10px 0px;
-	padding: 8px 16px 8px 16px;
-
-	-webkit-transition: all .5s;
-	transition: all .5s;
-}
-
-.btn-about {
-	color: #fff;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	background-color: #071D49;
-	border: 2px solid #D50032;
-}
-
-.btn-about:hover,
-.btn-about:focus {
-	color: #000;
-	background-color: #D50032;
-	border: 2px solid #071D49;
-}
 /* =================================
 Arrow Down
 ================================= */
@@ -262,547 +184,55 @@ Arrow Down
 }
 
 /* =================================
-Filler
-================================= */
-.filler-break {
-	height: 100px;
-	width: auto;
-	background-color: #071D49;
-
-}
-
-.space-filler-1 {
-
-	background-color: #071D49;
-	height: 25px;
-	width: 80.17%;
-	position: relative;
-	left: 50%;
-	margin-top: 25px;
-
-	-webkit-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-
-}
-
-.space-filler-2 {
-	background-color: #071D49;
-	height: 30px;
-	width: 80.17%;
-	position: relative;
-	top: 15px;
-	left: 50%;
-	margin-top: 25px;
-	padding-bottom: 0px;
-
-	-webkit-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-
-}
-
-/* =================================
-Content Boxes 
-================================= */
-
-.navigation-container {
-	
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.div-container {
-	
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.content-overlay-1 {
-	height: auto;
-	width: auto;
-	background-color: #071D49;
-	z-index: -9999;
-}
-
-
-/* =================================
 About 
 ================================= */
 #about-front {
-	height: 720px;
+	
+	position: relative;
+	
 }
-
-#about-heading
 
 /* About the Cooperative*/
-	{
-	margin: 50px 10px 0px;
-	font-size: 42px;
+
+#about-heading h2 {
+	
+	
+	padding: 1.5vh 0.5vh;  
+	margin: 1vh 0.5vh ;
+	font-size: 3vh;
 	font-weight: 200;
-	line-height: 45px;
-	display: inline-block;
+	line-height: 1;
 	text-align: center;
 	position: relative;
-	left: 415px;
+	top: 5vh;
+	left: 50%;	
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 
 }
-
-#about-heading h2 span
 
 /*Cooperative*/
-	{
-	font-size: 46px;
+
+#about-heading h2 span {
+	
+	font-size: 4vh;
 	font-weight: 500;
 }
 
-.iframe-border {
 
-	border: 4px solid RGBA(213, 0, 50, 1);
-	box-shadow: 0px 0px 3px 6px RGBA(7, 29, 73, 1);
-
-}
-
-#youtube {
-
-	margin-top: 105px;
-	position: relative;
-	right: 100px;
-}
-
-#about-buttons {
-	
-	
-	margin: 10px 10px;
-	padding: 0px 0px;
-	
-}
-
-
-#history-text {
-
-	margin: 40px 20px;
-}
-
-/* About.html */
-
-#about-header {
-	
-	margin-top: 20px;
-}
-
-#about-text {
-	
-	border-top: 1px solid #E8EAE7;
-	
-}
-
-#about-chairman-header {
-	
-	margin-top: 20px;
-	
-}
-
-#chairman-text {
-	
-	margin-top: 25px;
-	border-top: 1px solid #fff;
-	
-}
-#values-header {
-	
-	margin-top: 20px;
-	
-}
-
-#values-row {
-	
-	border-top: 1px solid #E8EAE7;
-	
-}
-
-#return-button {
-
-	margin-bottom: 15px;
-
-}
-
-/* =================================
-Statement 1
-================================= */
-
-.statement {
-
-	min-height: 360px;
-
-}
-
-#community-statement p {
-
-	color: #fff;
-	font-family: 'Lato', sans-serif;
-	font-size: 30px;
-	font-weight: 500;
-	line-height: 34px;
-
-
-}
-
-#statement-1 {
-
-	background: url("../img/about/hands.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	min-height: 360px;
-	z-index: -1;
-}
-
-#statement-shader-1 {
-	background-color: rgba(0, 0, 0, 0.6);
-	min-height: inherit;
-	position: relative;
-	z-index: 1;
-
-}
-
-#statement-1 .content-box-lg {
-
-	position: relative;
-	top: 110px;
-
-}
-
-/* =================================
-Team 
-================================= */
-#team-front {
-
-	background-color: #071D49;
-	height: 600px;
-	margin-top: 1px;
-	margin-bottom: 1px;
-
-}
-
-
-#vertical-heading-team h2
-
-/* Meet The*/
-	{
-	color: #fff;
-	margin: 20px 10px 30px;
-	font-size: 36px;
-	font-weight: 200;
-	line-height: 45px;
-	display: inline-block;
-	text-align: center;
-	position: relative;
-	top: 30px;
-	left: 490px;
-}
-
-#vertical-heading-team h2 span
-
-/* Team */
-	{
-	color: #fff;
-	font-size: 42px;
-	font-weight: 400;
-}
-
-/*Team Viewer*/
-
-.team-member {
-	margin: 8px;
-	position: relative;
-	top: 25px;
-	transition: all 1s;
-}
-
-.team-member:hover {
-	
-	transform: scale(1.1);
-}
-.team-member-overlay {
-
-	position: relative;
-	top: 0px;
-	left: 0;
-	width: 100%;
-	height: 100px;
-	opacity: 0;
-
-	-webkit-transition: all 300ms linear;
-	transition: all 300ms linear;
-
-}
-
-.team-member-info {
-	width: 100%;
-	height: 100%;
-	padding: 120px 0 10px;
-	position: relative;
-	top: -100px;
-
-}
-
-.team-member-info h6 {
-	color: #fff;
-	font-weight: 400 !important;
-	font-size: 22px !important;
-	line-height: 24px !important;
-	z-index: 1;
-}
-
-.team-member-info p {
-	color: #fff;
-	font-family: "Alegreya", serif;
-	font-weight: 400 !important;
-	font-size: 22px !important;
-	line-height: 24px !important;
-	z-index: 1;
-}
-
-.team-member:hover .team-member-overlay {
-	opacity: 1;
-}
-
-/* =================================
-Owl Carousel Slider Buttons
-================================= */
-
-.owl-stage-outer {
-	
-	padding-bottom: 20px; !important;
-}
-
-.owl-carousel .owl-nav button.owl-next,
-.owl-carousel .owl-nav button.owl-prev,
-.owl-carousel button.owl-dot {
-
-	color: #fff;
-	font-size: 40px;
-	background: none;
-	margin: 10px 5px;
-	position: relative;
-	bottom: 30px;
-	outline: none;
-	padding-bottom: 20px;
-
-}
-
-.owl-theme .owl-nav [class*=owl-] {
-
-	color: #D50032;
-	font-size: 100px;
-	background: none;
-	margin: 0;
-	padding-bottom: 20px;
-}
-
-.owl-theme .owl-nav [class*=owl-]:hover {
-	background: none;
-	color: #D50032;
-	border-color: transparent;
+#about-content {
 	
 
-}
-
-/* =================================
-Statement 2
-================================= */
-
-#mission-statement p {
-
-	color: #fff;
-	font-family: 'Lato', sans-serif;
-	font-size: 30px;
-	font-weight: 500;
-	line-height: 34px;
-
-}
-
-#statement-2 {
-
-	background: url("../img/about/schoolkids.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	min-height: 360px;
-	z-index: -1;
-}
-
-#statement-shader-2 {
-	background-color: rgba(0, 0, 0, 0.3);
-	min-height: inherit;
-	position: relative;
-	z-index: 1;
-
-}
-
-#statement-2 .content-box-lg {
-
-	position: relative;
-	top: 65px;
-
-}
-
-/* =================================
-Contact
-================================= */
-
-
-#contact-front {
-
-	height: 680px;
-
-
-}
-
-#contact-address {
-
-
-	border-top: 1px solid #E8EAE7;
-
-}
-
-#contact-address p {
-
-
-	margin-top: 10px;
-
-}
-
-#contact-wrapper {
-
-	margin-top: 50px;
-}
-
-#contact-heading {
-
-	overflow: hidden;
-}
-
-#contact-heading h2
-
-/* Contact*/
-	{
-	margin: 10px 10px;
-	font-size: 42px;
-	font-weight: 200;
-	line-height: 45px;
-	display: inline-block;
-	text-align: center;
-	position: relative;
-	top: 10px;
-	left: 415px;
-
-}
-
-#contact-heading h2 span
-
-/*Information*/
-	{
-	font-size: 46px;
-	font-weight: 400;
-	line-height: 60px;
-
-}
-
-#form {
-
-	border-top: 1px solid #E8EAE7;
-
-}
-/* =================================
-Google Map
-================================= */
-
-#map {
-
-	height: 500px;
-	width: 100%;
-}
-
-
-/* =================================
-Footer
-================================= */
-#footerbox {
-	border-top: 4px solid #D50032;
-}
-
-#footer {
-
-	background-color: #071D49;
-	height: 100px;
-
-}
-
-#footer p {
-
-	color: #fff;
-
-}
-
-
-
-#copyright {
-
-	margin-top: 20px;
-
-}
-
-
-/* =================================
-Chairman Page
-================================= */
-
-#chairman-img {
+	min-height: 100%;
 	
-	display: inline-block;
-	float: right;
-	margin-left: 50px;
-	margin-top: 40px;
-    border: 4px solid RGBA(213, 0, 50, 1);
-	box-shadow: 0px 0px 3px 6px RGBA(7, 29, 73, 1);
-
 	
 }
 
-
-
-/* end document */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#chairman-message {
+	
+	border-right: 1px solid #E8EAE7;
+	
+}
 
 
 
