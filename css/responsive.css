@@ -60,6 +60,12 @@ Colours:
 		
 	}
 	
+	#chairman-message {
+	
+	border-right: 1px solid #fff;
+		
+	}
+	
 }
 
 /* Medium Devices (Landscape Tablets & Small Desktops and Laptops) */
