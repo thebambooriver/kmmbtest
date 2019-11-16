@@ -113,8 +113,35 @@ Mobile Navigation Menu
 /* =================================
 Media Queries
 ================================= */
+/* Heading - Sustainable Returns - Mobile Screens less than 575px */
 
-
+	@media (max-width: 360px) {
+	#heading-container {
+		
+		text-align: center;
+		position: absolute;
+		top: 9%;
+		
+	}
+		
+	#home-heading {	
+		font-size: calc(20px + (12) * ((100vw - 300px)/(3000-300)));
+		line-height: calc(20px + (12) * ((100vw - 300px)/(3000-300)));
+		}
+}
+	@media (min-width: 361px) and (max-width: 511px) {
+	#heading-container {
+		text-align: center;
+		position: absolute;
+		top: 10%;
+		
+	}
+		#home-heading {	
+		font-size: calc(21px + (12) * ((100vw - 300px)/(3000-300)));
+		line-height: calc(21px + (12) * ((100vw - 300px)/(3000-300)));
+		}
+	
+}
 /* 1. Extra Small Devices (Landscape Phones & Portrait Tablets) */
 @media (max-width: 575px) {
 	
@@ -130,6 +157,9 @@ Media Queries
 		display: block;
 	}
 	
+	
+	
+
 }
 
 

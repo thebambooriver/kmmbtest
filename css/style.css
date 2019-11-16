@@ -166,10 +166,11 @@ Navigation
 ================================= */
 #hiddennav {
 
-	height: calc(50px + (55.57) * ((100vw - 300px)/(3000-300)));
+	height: calc(50px + (105.57) * ((100vw - 300px)/(3000-300)));
 	-webkit-box-shadow: 0 8px 6px -9px #999;
 	box-shadow: 0 8px 6px -9px #999;
 	padding: 0;
+	margin: 0;
 	position: relative;
 }
 
@@ -190,7 +191,8 @@ Navigation
 	margin: 0;
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: calc(5px + (15) * ((100vw - 300px)/(3000-300)));;
+	overflow: visible;
 }
 
 #navbar-full-text {
@@ -203,7 +205,7 @@ Navigation
 	text-transform: uppercase;
 	position: absolute;
 	top: 50%;
-	left: 200px;
+	left: calc(130px + (211.125) * ((100vw - 300px)/(3000-300)));
 	-webkit-transform: translate(0, -50%);
 	transform: translate(0, -50%);
 	
@@ -213,10 +215,10 @@ Navigation
 #navbar-short-text {
 	
 	font-size: calc(22px + (12) * ((100vw - 300px)/(3000-300)));
-	line-height: calc(1.1em + (12) * ((100vw - 300px)/(3000-300)));
+	line-height: calc(23px + (12) * ((100vw - 300px)/(3000-300)));
 	position: absolute;
 	top: 50%;
-	left: 200px;
+	left: calc(130px + (211.125) * ((100vw - 300px)/(3000-300)));
 	-webkit-transform: translate(0, -50%);
 	transform: translate(0, -50%);
 	display: none;
@@ -228,9 +230,9 @@ ul.navbar-nav > li > a {
 	font-family: "Lato", sans-serif;
 	color: #000 !important;
 	padding: 0px 0px !important;
-	margin-right: calc(10px + (20) * ((100vw - 300px)/(3000-300)));
-	font-size: calc(21px + (12) * ((100vw - 300px)/(3000-300)));
-	line-height: calc(1.1em + (12) * ((100vw - 300px)/(3000-300)));
+	margin-right: calc(25px + (20) * ((100vw - 300px)/(3000-300)));
+	font-size: calc(21.5px + (12) * ((100vw - 300px)/(3000-300)));
+	line-height: calc(22px + (12) * ((100vw - 300px)/(3000-300)));
 	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -244,9 +246,32 @@ ul.navbar-nav > li > a:focus {
 	color: #D50032 !important;
 
 }
+
 /* =================================
-Home
+Responsive Logo 
 ================================= */
+
+
+#navlogo-img {
+	
+	width: auto;
+	height: calc(100px + (211.125) * ((100vw - 300px)/(3000-300)));
+	position: relative;
+	z-index: 1;
+	
+	
+}
+/* =================================
+Home 
+================================= */
+
+#home-wrap {
+	
+	padding: 0;
+	position: relative;
+	
+	
+}
 
 #home-bg {
 	background-image: url("../img/about/klccview.jpg");
@@ -254,43 +279,40 @@ Home
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-position: center center;
+	background-color: #071D49; 
 	max-width: 100vw;
 	min-height: 100vh;
-	background-color: #071D49; 
-	z-index: -1;
+	z-index: -2;
 }
 
-#home-heading {
+#heading-container {
+	
 	position: relative;
+	
 }
-
-#home-heading-1 {
-	color: #fff;
-	font-size: 1.5vh;
-	font-weight: 300;
-	font-family: "Alegreya", serif;
-	margin-right: 25px;
-	text-transform: uppercase;
-	word-spacing: 4px;
-	line-height: calc(1.1em + 0.5vw);
+#home-heading-wrap {
+	
 	position: absolute;
-	top: 5vh;
-	left: 20vw;
+	height: calc(50px + (105.57) * ((100vw - 300px)/(3000-300)));
+	width: 100%;
+	
 }
-
-#home-heading-2 {
-	color: #fff;
-	font-size: 3vh;
+#home-heading {
+	color: white;
+	font-size: calc(22px + (12) * ((100vw - 300px)/(3000-300)));
+	line-height: calc(22px + (12) * ((100vw - 300px)/(3000-300)));
 	font-weight: 300;
+	text-transform: uppercase;
 	font-family: "Lato", sans-serif;
 	margin-right: 25px;
-	text-transform: uppercase;
-	word-spacing: 4px;
-	line-height: calc(1.1em + 0.5vw);
+	word-spacing: 3px;
 	position: absolute;
-	top: 10vh;
-	left: 10vw;
+	top: 50%;
+	left: calc(130px + (211.125) * ((100vw - 300px)/(3000-300)));
+	-webkit-transform: translate(0, -50%);
+	transform: translate(0, -50%);
 }
+
 
 /* =================================
 Arrow Down
@@ -684,18 +706,7 @@ Chairman Page
 	
 }
 
-/* =================================
-Responsive Logo 
-================================= */
 
-
-#navlogo-img {
-	
-	width: auto;
-	height: calc(100px + (111.125) * ((100vw - 300px)/(3000-300)));
-	
-	
-}
 
 /* end document */
 
