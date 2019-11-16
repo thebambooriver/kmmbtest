@@ -1,5 +1,5 @@
 /* =================================
-Responsive Themes - KMMB
+Responsive Profiles - KMMB
 ------------------------------
 Fonts: Alegreya 400,500,700,800 
 & Lato 300,300i,400,400i,700
@@ -16,107 +16,222 @@ Colours:
 ================================= */
 
 
-/* Extra Small Devices (Landscape Phones & Portrait Tablets) */
-@media (max-width: 575px) {
+/* =================================
+Mobile Navigation Menu
+================================= */
+
+#mobile-nav-open-btn {
 	
-/* Navbar Brand Heading */
+	font-size: 30px;
+	color: #071D49;
+	cursor: pointer;
+	z-index: 2;
+	position: absolute;
+	right: 20px;
+	top: 20px;
 	
-	#logoborder {
-		
-		content: url("../img/logo/navlogo-round-white-60.png")
-		
-	}
-	#navlogo-img {
-		
-		
-		max-height: 10vh;
-		
-		
-	}
-	
-	#chairman-message {
-	
-	border-right: 1px solid #fff;
-	
-}
-	
-	/* Navbar Brand Heading */
+	/* Hide Mobile Nav Button */
+	display: none; 
 }
 
-/* Small Devices (Portrait Tablets & Small Desktops and Laptops) */
+#mobile-nav {
+	
+	/* Mobile nav will be hidden with height 0%, by default */
+	height: 0%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 3;
+	background-color: rgba(255,255,255, .9);
+	transition: all 300ms linear;
+	overflow-y: hidden;
+	
+	/*Hide Mobile Nav Menu */
+	
+	display: none;
+}
+
+#mobile-nav-close-btn {
+	
+	font-family: "Lato", sans-serif;
+	font-size: 60px;
+	color: #071D49;
+	font-weight: 400;
+	cursor: pointer;
+	position: absolute;
+	top: 20px;
+	right: 18px;
+	-webkit-transition: .3s;
+	transition: .3s;
+	
+}
+
+#mobile-nav-content {
+	
+	text-align: center;
+	width: 100%;
+	margin-top: 20vh;
+	position: relative;
+	top: 10%;
+	
+}
+
+#mobile-nav ul li {
+	
+	margin-bottom: 10vh;
+	
+}
+
+#mobile-nav a {
+	font-family: "Lato", serif;
+	font-size: 26px;
+	color: #071D49;
+	font-weight: 400;
+	text-transform: uppercase;
+	display: inline;
+	-webkit-transition: .3s;
+	transition: .3s;
+
+}
+
+#mobile-nav a:hover,
+#mobile-nav a:focus
+#mobile-nav-close-btn:hover,
+#mobile-nav-close-btn:focus {
+	color: #D50032;
+	background: none;
+	
+	
+}
+
+/* =================================
+Media Queries
+================================= */
+
+
+/* 1. Extra Small Devices (Landscape Phones & Portrait Tablets) */
+@media (max-width: 575px) {
+	
+/* Navigation */
+	
+	#mobile-nav-open-btn {
+		
+		display: block;
+	}
+	
+	#mobile-nav {
+		
+		display: block;
+	}
+	
+}
+
+
+/* 2. Small Devices (Portrait Tablets & Small Desktops and Laptops) */
 
 @media (min-width: 576px) and (max-width: 767px) {
 	
-	#logoborder {
+	/* Navigation */
+	
+	#mobile-nav-open-btn {
 		
-		content: url("../img/logo/navlogo-round-white-60.png")
-		
-	}
-	#navlogo-img {
-		
-		
-		max-height: 10vh;
-		
-		
+		display: block;
 	}
 	
-	#chairman-message {
-	
-	border-right: 1px solid #fff;
+	#mobile-nav {
 		
+		display: block;
 	}
+	
+	
+	
 	
 }
 
-/* Medium Devices (Landscape Tablets & Small Desktops and Laptops) */
+/* 3. Medium Devices (Landscape Tablets & Small Desktops and Laptops) */
 
 @media (min-width: 768px) and (max-width: 991px) {
 	
-	#logoborder {
-		
-		content: url("../img/logo/navlogo-round-white-120.png")
-		
-	}
-	#navlogo-img {
-		
-		
-		max-height: 10vh;
-		
-		
-	}
+	/* Navbar Brand Heading */
 	
 	
 }
 
-/* Large Devices (Medium Desktops & Laptops) */
+@media (min-width: 1076px) {
+	
+}
+	
+	
+/* 4. Large Devices (Medium Desktops & Laptops) */
 @media (min-width: 992px) and (max-width: 1199px) {
 	
+
+}
+
+
+/* 5. Large Devices 1200 (Large Desktops & Laptops) */
+
+@media (min-width: 1200px) and (max-width: 1279px){
 	
-}
 	
 
-/* X-Large Devices (Large Desktops & Laptops) */
+}
 
-@media (min-width: 1200px) and (max-width: 1399px){
+/* Header Breakpoint. Large Devices 1200 (Large Desktops & Laptops) */
+@media (max-width: 1260px) {
+	
+	#navbar-full-text {
+		
+		display: none;
+	}
+	
+	#navbar-short-text {
+		
+		display: inline-block;
+	}
+}
+
+/* 6. Large Devices 1280 (Wide Screens M) */
+
+@media (min-width: 1280px) and (max-width: 1359px){
+	
 
 }
 
-/* XX-Large Devices (Wide Screens) */
 
-@media (min-width: 1400px) and (max-width: 1599px){
+/* 7. Large Devices 1366 (Wide Screens L) */
 
-}
-
-
-/* XXX-Large Devices (Wide Screens) */
-
-@media (min-width: 1600px) and (max-width: 2000px){
+@media (min-width: 1366px) and (max-width: 1439px){
 
 }
 
-/* XXXX-Large Devices (Wide Screens) */
+/* 8. Large Devices 1440 (Wide Screens XL) */
 
-@media (min-width: 2000px) {
+@media (min-width: 1440px) and (max-width: 1599px){
 
 }
 
+/* 9. Extra Wide Screens 1600  */
+
+@media (min-width: 1600px) and (max-width: 1679px){
+
+}
+
+/* 10. Extra Wide Screens 1680  */
+
+@media (min-width: 1680px) and (max-width: 1919px){
+
+}
+
+/* 11. Extra Wide Screens 1920  */
+
+@media (min-width: 1920px) and (max-width: 2559px){
+
+}
+
+/* 12. Extra Wide Screens 2560  */
+
+@media (min-width: 2560px) {
+
+}
