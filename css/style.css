@@ -32,10 +32,7 @@ body {
 body {
 	color: #071D49;
 	margin: auto 0;
-
-/* Responsive type : Minimum 16px, grows at half the rate of screen growth */
-
-	font-size: 10px;
+	font-size: 16px;
 	
 /*Line-height based on font-size */
 	
@@ -63,7 +60,7 @@ p {
 	font-family: "Lato", sans-serif;
 	font-size: 16px;
 	font-weight: 400;
-	line-height: 24px;
+	line-height: 16px;
 }
 
 
@@ -74,6 +71,7 @@ Generic Styles - Content Boxes
 .content-box-lg {
 	
 	padding: 2vw 10vw;
+	position: relative;
 	
 }
 
@@ -84,7 +82,7 @@ Generic Styles - Content Boxes
 	
 }
 
-.context-box-sm {
+.content-box-sm {
 	
 	padding: 1vw 2.5vw;
 	position: relative;
@@ -97,7 +95,7 @@ Generic Styles - Content Boxes
 Generic Styles - Filler
 ================================= */
 .filler-break {
-	height: 100px;
+	height: calc(50px + (105.57) * ((100vw - 300px) / (3000 - 300)));
 	width: auto;
 	background-color: #071D49;
 
@@ -110,10 +108,10 @@ Generic Styles - Filler
 	min-width: 90vw;
 	margin: 0.5vh;
 	position: relative;
+	top: 5vmin;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-
 
 }
 
@@ -128,8 +126,6 @@ Generic Styles - Filler
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 
-	
-	
 }
 
 /* =================================
@@ -161,12 +157,20 @@ Generic Styles - Buttons
 	border: 2px solid #071D49;
 }
 
+.btn-column {
+	
+	padding: 10px, 10px;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	
+}
+
 /* =================================
 Navigation 
 ================================= */
 #hiddennav {
 
-	height: calc(50px + (105.57) * ((100vw - 300px)/(3000-300)));
+	height: calc(50px + (105.57) * ((100vw - 300px) / (3000 - 300)));
 	-webkit-box-shadow: 0 8px 6px -9px #999;
 	box-shadow: 0 8px 6px -9px #999;
 	padding: 0;
@@ -191,21 +195,23 @@ Navigation
 	margin: 0;
 	position: absolute;
 	top: 0;
-	left: calc(5px + (15) * ((100vw - 300px)/(3000-300)));;
+	left: calc(5px + (15) * ((100vw - 300px) / (3000 - 300)));;
 	overflow: visible;
+	-webkit-box-shadow: 0 8px 6px -9px #999;
+	box-shadow: 0 8px 6px -9px #999;
 }
 
 #navbar-full-text {
 	
 	font-family: "Lato", sans-serif;
 	color: #000 !important;
-	font-size: calc(22px + (12) * ((100vw - 300px)/(3000-300)));
-	line-height: calc(1.1em + (12) * ((100vw - 300px)/(3000-300)));
+	font-size: calc(22px + (12) * ((100vw - 300px) / (3000 - 300)));
+	line-height: calc(1.1em + (12) * ((100vw - 300px) / (3000 - 300)));
 	font-weight: 400;
 	text-transform: uppercase;
 	position: absolute;
 	top: 50%;
-	left: calc(130px + (211.125) * ((100vw - 300px)/(3000-300)));
+	left: calc(130px + (211.125) * ((100vw - 300px) / (3000 - 300)));
 	-webkit-transform: translate(0, -50%);
 	transform: translate(0, -50%);
 	
@@ -214,11 +220,11 @@ Navigation
 
 #navbar-short-text {
 	
-	font-size: calc(22px + (12) * ((100vw - 300px)/(3000-300)));
-	line-height: calc(23px + (12) * ((100vw - 300px)/(3000-300)));
+	font-size: calc(22px + (12) * ((100vw - 300px) / (3000 - 300)));
+	line-height: calc(23px + (12) * ((100vw - 300px) / (3000 - 300)));
 	position: absolute;
 	top: 50%;
-	left: calc(130px + (211.125) * ((100vw - 300px)/(3000-300)));
+	left: calc(130px + (211.125) * ((100vw - 300px) / (3000 - 300)));
 	-webkit-transform: translate(0, -50%);
 	transform: translate(0, -50%);
 	display: none;
@@ -230,9 +236,9 @@ ul.navbar-nav > li > a {
 	font-family: "Lato", sans-serif;
 	color: #000 !important;
 	padding: 0px 0px !important;
-	margin-right: calc(25px + (20) * ((100vw - 300px)/(3000-300)));
-	font-size: calc(21.5px + (12) * ((100vw - 300px)/(3000-300)));
-	line-height: calc(22px + (12) * ((100vw - 300px)/(3000-300)));
+	margin-right: calc(25px + (20) * ((100vw - 300px) / (3000 - 300)));
+	font-size: calc(21.5px + (12) * ((100vw - 300px) / (3000 - 300)));
+	line-height: calc(22px + (12) * ((100vw - 300px) / (3000 - 300)));
 	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -255,9 +261,11 @@ Responsive Logo
 #navlogo-img {
 	
 	width: auto;
-	height: calc(100px + (211.125) * ((100vw - 300px)/(3000-300)));
+	height: calc(100px + (211.125) * ((100vw - 300px) / (3000 - 300)));
 	position: relative;
 	z-index: 1;
+	-webkit-box-shadow: -1px 3px 6px -2px RGBA(153, 153, 153, 0.5);
+	box-shadow: -1px 3px 6px -2px RGBA(153, 153, 153, 0.5);
 	
 	
 }
@@ -293,14 +301,14 @@ Home
 #home-heading-wrap {
 	
 	position: absolute;
-	height: calc(50px + (105.57) * ((100vw - 300px)/(3000-300)));
+	height: calc(50px + (105.57) * ((100vw - 300px) / (3000 - 300)));
 	width: 100%;
 	
 }
-#home-heading {
+.home-heading {
 	color: white;
-	font-size: calc(22px + (12) * ((100vw - 300px)/(3000-300)));
-	line-height: calc(22px + (12) * ((100vw - 300px)/(3000-300)));
+	font-size: calc(22px + (12) * ((100vw - 300px) / (3000 - 300)));
+	line-height: calc(22px + (12) * ((100vw - 300px) / (3000 - 300)));
 	font-weight: 300;
 	text-transform: uppercase;
 	font-family: "Lato", sans-serif;
@@ -308,12 +316,24 @@ Home
 	word-spacing: 3px;
 	position: absolute;
 	top: 50%;
-	left: calc(130px + (211.125) * ((100vw - 300px)/(3000-300)));
+	left: calc(130px + (211.125) * ((100vw - 300px) / (3000 - 300)));
 	-webkit-transform: translate(0, -50%);
 	transform: translate(0, -50%);
 }
 
 
+#heading-1 {
+		display: inline-block;
+	}
+
+#heading-2 {
+		display: none;
+	}
+	
+#heading-3 {
+	
+	display: none;
+}
 /* =================================
 Arrow Down
 ================================= */
@@ -338,93 +358,109 @@ Arrow Down
 /* =================================
 About 
 ================================= */
-#about-front {
-	
-	position: relative;
-	
-}
-
-/* About the Cooperative*/
-
 #about-heading h2 {
 	
-	padding: 1.5vh 0.5vh;  
-	margin: 1vh 0.5vh ;
-	font-size: 3vh;
+	/*  About the */
+	
+	padding: 0;  
+	margin-bottom: 0.5em;
+	font-size: calc(32px + (12) * ((100vw - 300px) / (3000 - 300)));
 	font-weight: 200;
-	line-height: 1;
+	line-height: 1.1em;
 	text-align: center;
 	position: relative;
-	top: 5vh;
+	top: calc(5vh + (5) * ((100vw - 300px) / (3000 - 300)));
 	left: 50%;	
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-
+	
 }
-
-/*Cooperative*/
 
 #about-heading h2 span {
-	
-	font-size: 4vh;
+	/*  Cooperative */
+
+	font-size: calc(40px + (12) * ((100vw - 300px) / (3000 - 300)));
 	font-weight: 500;
-}
-
-
-#about-content {
-	
-	min-height: 100%;
+	line-height: 1.1em;
 	
 }
 
-#chairman-message {
+#chairmans-message h3 {
 	
-	border-right: 1px solid #E8EAE7;
-
+	/*  Chairman's Message */
+	padding: 0;  
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-size: calc(26px + (12) * ((100vw - 300px) / (3000 - 300)));
+	font-weight: 300;
+	line-height: 1.1em;
+	text-align: center;
+	position: relative;
+	top: calc(1em + (3) * ((100vw - 300px) / (3000 - 300)));
+	left: 50%;	
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	
+	
 }
-#chairman-para {
+
+.text-box p {
+	
+	padding: 0; 
+	margin-top: 1.5em;
+	margin-bottom: 0.5em;
+	font-size: calc(16px + (8) * ((100vw - 300px) / (3000 - 300)));
+	line-height: calc(1.1em + (8) * ((100vw - 300px) / (3000 - 300)));
+	font-weight: 400;
+	
+}
+
+#chairmans-info {
 	
 	border-top: 1px solid #E8EAE7;
-	padding: 3vh 0vh;
+	padding-right: calc(1em + (3) * ((100vw - 300px) / (3000 - 300)));
+	padding-left: calc(1em + (3) * ((100vw - 300px) / (3000 - 300)));
+	
 }
 
-#about-para {
+
+#about-us h3 {
+	
+	padding: 0;  
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-size: calc(26px + (12) * ((100vw - 300px) / (3000 - 300)));
+	font-weight: 300;
+	line-height: 1.1em;
+	text-align: center;
+	position: relative;
+	top: calc(1em + (3) * ((100vw - 300px) / (3000 - 300)));
+	left: 50%;	
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+#about-info {
 	
 	border-top: 1px solid #E8EAE7;
-	padding: 3vh 0vh;
+	padding-right: calc(1em + (3) * ((100vw - 300px) / (3000 - 300)));
+	padding-left: calc(1em + (3) * ((100vw - 300px) / (3000 - 300)));
 }
 
 /* =================================
 Statement 1
 ================================= */
 
-#statement-wrap {
+#statement-bg {
 	
-	min-height: 30vh;
+	min-height: 300px;
+	width: auto;
 	background: url("../img/about/hands.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	background-attachment: scroll;
 	z-index: -1;
-}
-
-#community-statement {
-	
-	position:absolute;
-	padding: 4vh 2vw;
-	
-}
-
-
-#community-statement p {
-
-	color: #fff;
-	font-family: 'Lato', sans-serif;
-	font-size: 2.5vh;
-	font-weight: 500;
-	line-height: 3vh;
-
 }
 
 #statement-shader-1 {
@@ -435,44 +471,67 @@ Statement 1
 
 }
 
+#community-statement {
+	
+	position: relative;
+	padding-top: 1em;  
+	padding-bottom: 1em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	top: 50%;
+	left: 50%;	
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	
+}
+#community-statement p {
+	
+	position: relative;
+	color: #fff;
+	font-size: calc(26px + (12) * ((100vw - 300px) / (3000 - 300)));
+	font-weight: 400;
+	line-height: 1.1em;
+	text-align: center;
+}
+
 /* =================================
 Team 
 ================================= */
 #team-front {
 
 	background-color: #071D49;
-	height: 600px;
+	height: calc(600px + (200) * ((100vw - 300px) / (3000 - 300)));
 	margin-top: 1px;
 	margin-bottom: 1px;
 
 }
 
+#team-heading h2
 
-#vertical-heading-team h2
-
-/* Meet The*/{
+/* Our*/{
 	color: #fff;
-	padding: 1.5vh 0.5vh;  
-	margin: 1vh 0.5vh ;
-	font-size: 3vh;
+	padding: 0;  
+	margin-bottom: 0.5em;
+	font-size: calc(30px + (12) * ((100vw - 300px) / (3000 - 300)));
 	font-weight: 200;
-	line-height: 1;
+	line-height: 1.1em;
 	text-align: center;
 	position: relative;
-	top: 5vh;
+	top: calc(5vh + (5) * ((100vw - 300px) / (3000 - 300)));
 	left: 50%;	
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 
 }
 
-#vertical-heading-team h2 span
+#team-heading h2 span
 
 /* Team */
 	{
 	color: #fff;
-	font-size: 4vh;
+	font-size: calc(38px + (12) * ((100vw - 300px) / (3000 - 300)));
 	font-weight: 500;
+	line-height: 1.1em;
 }
 
 /*Team Viewer*/
@@ -514,8 +573,8 @@ Team
 .team-member-info h6 {
 	color: #fff;
 	font-weight: 400 !important;
-	font-size: 22px !important;
-	line-height: 24px !important;
+	font-size: calc(16px + (6) * ((100vw - 300px) / (3000 - 300))); !important;
+	line-height: calc(16px + (6) * ((100vw - 300px) / (3000 - 300))); !important;
 	z-index: 1;
 }
 
@@ -523,8 +582,8 @@ Team
 	color: #fff;
 	font-family: "Alegreya", serif;
 	font-weight: 400 !important;
-	font-size: 22px !important;
-	line-height: 24px !important;
+	font-size: calc(16px + (6) * ((100vw - 300px) / (3000 - 300))); !important;
+	line-height: calc(16px + (6) * ((100vw - 300px) / (3000 - 300))); !important;
 	z-index: 1;
 }
 
@@ -584,7 +643,7 @@ Statement 2
 	background-size: cover;
 	background-position: center;
 	background-attachment: scroll;
-	min-height: 30vh;
+	min-height: 300px;
 	z-index: -1;
 }
 
@@ -600,59 +659,99 @@ Statement 2
 Contact
 ================================= */
 
-
-#contact-front {
-
-	position: relative;
-
-
-}
-
 #contact-heading h2 {
 	
-	padding: 1.5vh 0.5vh;  
-	margin: 1vh 0.5vh ;
-	font-size: 3vh;
+	/*  Contact */
+	padding: 0;  
+	margin-bottom: 0.5em;
+	font-size: calc(32px + (12) * ((100vw - 300px) / (3000 - 300)));
 	font-weight: 200;
-	line-height: 1;
+	line-height: 1.1em;
 	text-align: center;
 	position: relative;
-	top: 5vh;
+	top: calc(5vh + (5) * ((100vw - 300px) / (3000 - 300)));
 	left: 50%;	
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-
+	
 }
-
-/*Cooperative*/
 
 #contact-heading h2 span {
-	
-	font-size: 4vh;
+	/*  Cooperative */
+
+	font-size: calc(40px + (12) * ((100vw - 300px) / (3000 - 300)));
 	font-weight: 500;
-}
-
-
-#contact-address {
-
-
-	border-top: 1px solid #E8EAE7;
+	line-height: 1.1em;
 
 }
 
-#form {
-
-	border-top: 1px solid #E8EAE7;
-
+#address-heading h3 {
+	/*  Visit Our */
+	padding: 0;  
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-size: calc(26px + (12) * ((100vw - 300px) / (3000 - 300)));
+	font-weight: 300;
+	line-height: 1.1em;
+	text-align: center;
+	position: relative;
+	top: calc(1em + (3) * ((100vw - 300px) / (3000 - 300)));
+	left: 50%;	
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
 
-#visit {
+#address-heading h3 span {
+	/*  Office */
+
+	font-size: calc(28px + (12) * ((100vw - 300px) / (3000 - 300)));
+	font-weight: 500;
+	line-height: 1.1em;
+
+}
+#address-info {
 	
-	text-align: center;
+	margin-bottom: 1.5em;
+	border-top: 1px solid #E8EAE7;
+	padding-right: calc(1em + (3) * ((100vw - 300px) / (3000 - 300)));
+	padding-left: calc(1em + (3) * ((100vw - 300px) / (3000 - 300)));
 }
 
-#enquiries {
+#enquiry-heading h3 {
+	/*  Send An */
+	padding: 0;  
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-size: calc(26px + (12) * ((100vw - 300px) / (3000 - 300)));
+	font-weight: 300;
+	line-height: 1.1em;
 	text-align: center;
+	position: relative;
+	top: calc(1em + (3) * ((100vw - 300px) / (3000 - 300)));
+	left: 50%;	
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+#enquiry-heading h3 span {
+	/*  Office */
+
+	font-size: calc(28px + (12) * ((100vw - 300px) / (3000 - 300)));
+	font-weight: 500;
+	line-height: 1.1em;
+
+}
+#enquiry-form {
+	
+	border-top: 1px solid #E8EAE7;
+	padding-right: calc(1em + (3) * ((100vw - 300px) / (3000 - 300)));
+	padding-left: calc(1em + (3) * ((100vw - 300px) / (3000 - 300)));
+}
+
+::placeholder {
+	
+	font-size: calc(10px + (6) * ((100vw - 300px) / (3000 - 300)));
+	line-height: 1.1em;
 }
 
 /* =================================
@@ -688,24 +787,206 @@ Footer
 
 }
 
-
-
 /* =================================
-Chairman Page
+About Page Custom CSS
 ================================= */
 
-#chairman-img {
+#about-pg-heading h2 {
+	/*  About the */
 	
-	display: inline-block;
-	float: right;
-	margin-left: 50px;
-	margin-top: 40px;
-    border: 4px solid RGBA(213, 0, 50, 1);
-	box-shadow: 0px 0px 3px 6px RGBA(7, 29, 73, 1);
-
+	padding: 0;  
+	margin-bottom: 0.5em;
+	font-size: calc(32px + (12) * ((100vw - 300px) / (3000 - 300)));
+	font-weight: 200;
+	line-height: 1.1em;
+	text-align: center;
+	position: relative;
+	top: calc(5vh + (5) * ((100vw - 300px) / (3000 - 300)));
+	left: 50%;	
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 	
 }
 
+#about-pg-heading h2 span {
+	/*  Cooperative */
+	
+	padding: 0;  
+	margin: 0;
+	font-size: calc(40px + (12) * ((100vw - 300px)/(3000-300)));
+	font-weight: 500;
+	line-height: 1.1em;
+
+}
+
+
+/*  About Us */
+#about-pg-header h2 {
+	
+	padding: 0;  
+	margin-bottom: 0.5em;
+	font-size: calc(24px + (12) * ((100vw - 300px)/(3000-300)));
+	font-weight: 300;
+	line-height: 1.5em;
+	
+}
+
+#about-pg-header h2 span{
+	
+	padding: 0;  
+	margin: 0;
+	font-size: calc(24px + (12) * ((100vw - 300px)/(3000-300)));
+	font-weight: 400;
+	line-height: 1.5em;
+	
+	
+	
+}
+#about-pg-text p {
+	
+	padding: 0;  
+	margin-bottom: 0.5em;
+	font-size: calc(14px + (8) * ((100vw - 300px)/(3000-300)));
+	font-weight: 400;
+
+}
+
+
+/*   Our Values */
+#values-header h2{
+	
+	padding: 0; 
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+	font-size: calc(24px + (12) * ((100vw - 300px)/(3000-300)));
+	font-weight: 300;
+	line-height: 1.5em;
+	
+}
+
+#values-header h2 span {
+	padding: 0;  
+	margin: 0;
+	font-size: calc(24px + (12) * ((100vw - 300px) / (3000 - 300)));
+	font-weight: 400;
+	line-height: 1.5em;
+	
+	}
+#values-text p {
+	
+	padding: 0;  
+	margin-bottom: 0.5em;
+	font-size: calc(14px + (8) * ((100vw - 300px)/(3000-300)));
+	font-weight: 400;
+	
+}
+
+
+/*================================= 
+Chairman Page Custom CSS
+================================= */
+#chairman-pg-heading h2 {
+	
+	/*  Chairman's */
+	
+	padding: 0;  
+	margin-bottom: 0.5em;
+	font-size: calc(32px + (12) * ((100vw - 300px) / (3000 - 300)));
+	font-weight: 200;
+	line-height: 1.1em;
+	text-align: center;
+	position: relative;
+	top: calc(5vh + (5) * ((100vw - 300px) / (3000 - 300)));
+	left: 50%;	
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	
+}
+
+#chairman-pg-heading h2 span {
+	/*  Message */
+
+	font-size: calc(40px + (12) * ((100vw - 300px) / (3000 - 300)));
+	font-weight: 500;
+	line-height: 1.1em;
+	
+}
+
+#chairman-img {
+	
+	padding: 0;
+	margin: 1.5em;
+	position: relative;
+	top: 0;
+	right: calc(2em + (15) * ((100vw - 300px) / (3000 - 300))); 
+	overflow: visible;
+	display: inline-block;
+	float: center;
+    border: 4px solid RGBA(213, 0, 50, 1);
+	-webkit-box-shadow: 0px 0px 3px 6px RGBA(7, 29, 73, 1);
+	box-shadow: 0px 0px 3px 6px RGBA(7, 29, 73, 1);
+
+}
+
+.img-responsive-modifier {
+	
+	width: auto;
+	height: calc(75px + (225) * ((100vw - 300px) / (3000 - 300)));
+	overflow: visible;
+	position: relative;
+	z-index: 1;
+	
+}
+
+#chairman-greeting {
+	
+	position: relative;
+	top: 60%;
+	left: 50%;	
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	
+}
+
+#chairman-greeting p {
+	
+	padding: 0;  
+	margin-bottom: 0.5em;
+	font-size: calc(12px + (12) * ((100vw - 300px) / (3000 - 300)));
+	line-height: calc(1.1em + (12) * ((100vw - 300px) / (3000 - 300)));
+	font-weight: 400;
+	
+	
+}
+.chairman-text-box p {
+	
+	padding: 0;  
+	margin-bottom: 0.5em;
+	font-size: calc(16px + (8) * ((100vw - 300px) / (3000 - 300)));
+	line-height: calc(1.1em + (8) * ((100vw - 300px) / (3000 - 300)));
+	font-weight: 400;
+	
+}
+
+#chairman-signature {
+	
+	position: relative;
+	top: 50%;
+	left: 50%;	
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	display: inline-block;
+	
+}
+#chairman-signature p {
+	
+	padding: 0;  
+	margin-bottom: 0.5em;
+	font-size: calc(16px + (8) * ((100vw - 300px) / (3000 - 300)));
+	line-height: calc(1.1em + (8) * ((100vw - 300px) / (3000 - 300)));
+	font-weight: 400;
+	
+}
 
 
 /* end document */

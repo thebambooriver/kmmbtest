@@ -21,7 +21,7 @@ Mobile Navigation Menu
 ================================= */
 
 #mobile-nav-open-btn {
-	
+
 	font-size: 30px;
 	color: #071D49;
 	cursor: pointer;
@@ -29,13 +29,13 @@ Mobile Navigation Menu
 	position: absolute;
 	right: 20px;
 	top: 20px;
-	
+
 	/* Hide Mobile Nav Button */
-	display: none; 
+	display: none;
 }
 
 #mobile-nav {
-	
+
 	/* Mobile nav will be hidden with height 0%, by default */
 	height: 0%;
 	width: 100%;
@@ -43,17 +43,17 @@ Mobile Navigation Menu
 	top: 0;
 	left: 0;
 	z-index: 3;
-	background-color: rgba(255,255,255, .9);
+	background-color: rgba(255, 255, 255, .9);
 	transition: all 300ms linear;
 	overflow-y: hidden;
-	
+
 	/*Hide Mobile Nav Menu */
-	
+
 	display: none;
 }
 
 #mobile-nav-close-btn {
-	
+
 	font-family: "Lato", sans-serif;
 	font-size: 60px;
 	color: #071D49;
@@ -64,23 +64,23 @@ Mobile Navigation Menu
 	right: 18px;
 	-webkit-transition: .3s;
 	transition: .3s;
-	
+
 }
 
 #mobile-nav-content {
-	
+
 	text-align: center;
 	width: 100%;
 	margin-top: 20vh;
 	position: relative;
 	top: 10%;
-	
+
 }
 
 #mobile-nav ul li {
-	
+
 	margin-bottom: 10vh;
-	
+
 }
 
 #mobile-nav a {
@@ -97,7 +97,7 @@ Mobile Navigation Menu
 
 #mobile-nav a:hover,
 #mobile-nav a:focus {
-	
+
 	color: #D50032;
 	background: none;
 }
@@ -113,52 +113,146 @@ Mobile Navigation Menu
 /* =================================
 Media Queries
 ================================= */
-/* Heading - Sustainable Returns - Mobile Screens less than 575px */
+/* Heading - Sustainable Returns - Mobile Screens less than 836 */
 
-	@media (max-width: 360px) {
+/* 1. Extra Small Devices (Portrait Phones) */
+@media (max-width: 360px) {
 	#heading-container {
-		
+
 		text-align: center;
 		position: absolute;
 		top: 9%;
-		
+
 	}
-		
-	#home-heading {	
-		font-size: calc(20px + (12) * ((100vw - 300px)/(3000-300)));
-		line-height: calc(20px + (12) * ((100vw - 300px)/(3000-300)));
-		}
+
+	.home-heading {
+		font-size: calc(20px + (12) * ((100vw - 300px)/(3000 - 300)));
+		line-height: calc(20px + (12) * ((100vw - 300px)/(3000 - 300)));
+	}
 }
-	@media (min-width: 361px) and (max-width: 511px) {
+
+/* 2. Extra Small Devices (Portrait and Landscape Phones) */
+@media (min-width: 361px) and (max-width: 511px) {
 	#heading-container {
 		text-align: center;
 		position: absolute;
 		top: 10%;
-		
+
 	}
-		#home-heading {	
-		font-size: calc(21px + (12) * ((100vw - 300px)/(3000-300)));
-		line-height: calc(21px + (12) * ((100vw - 300px)/(3000-300)));
-		}
+
+	.home-heading {
+		font-size: calc(21px + (12) * ((100vw - 300px)/(3000 - 300)));
+		line-height: calc(21px + (12) * ((100vw - 300px)/(3000 - 300)));
+	}
+
+}
+
+/* 3. Extra Small Devices (Portrait Tablets and Landscape Phones) */
+@media (min-width: 512px) and (max-width: 548px) {
+	#heading-container {
+		text-align: center;
+		position: absolute;
+		top: 10%;
+
+	}
+
+	.home-heading {
+		font-size: calc(21px + (12) * ((100vw - 300px)/(3000 - 300)));
+		line-height: calc(21px + (12) * ((100vw - 300px)/(3000 - 300)));
+	}
+
+	#heading-1 {
+		display: none;
+	}
+
+	#heading-2 {
+		display: inline;
+	}
+
+}
+
+/* 3. Extra Small Devices (Portrait Tablets and Landscape Phones) */
+@media (min-width: 549px) and (max-width: 836px) {
+	#heading-container {
+		text-align: center;
+		position: absolute;
+		top: 10%;
+
+	}
+
+	#heading-1 {
+		display: none;
+	}
+
+	#heading-2 {
+		display: inline;
+		left: 30vw;
+	}
+	
+	
+
+}
+
+/* 4. Extra Small Devices (Portrait Tablets and Landscape Phones) */
+@media (min-width: 690px) and (max-width: 836px) {
+	#heading-container {
+		text-align: center;
+		position: absolute;
+		top: 10%;
+
+	}
+
+	#heading-1 {
+		display: none;
+	}
+
+	#heading-2 {
+		display: inline;
+		left: 32vw;
+	}
+	
+	
+
+}
+/* 5. Extra Small Devices (Portrait Tablets and Landscape Phones) */
+@media (min-width: 837px) and (max-width: 848px) {
+	
+	#heading-container {
+		text-align: center;
+		position: absolute;
+		top: 10%;
+
+	}
+
+	#heading-1 {
+		display: none;
+	}
+
+	#heading-2 {
+		display: inline;
+		left: 33vw;
+	}
 	
 }
+
+
 /* 1. Extra Small Devices (Landscape Phones & Portrait Tablets) */
 @media (max-width: 575px) {
-	
-/* Navigation */
-	
+
+	/* Navigation */
+
 	#mobile-nav-open-btn {
-		
+
 		display: block;
 	}
-	
+
 	#mobile-nav {
-		
+
 		display: block;
 	}
-	
-	
-	
+
+
+
 
 }
 
@@ -166,107 +260,83 @@ Media Queries
 /* 2. Small Devices (Portrait Tablets & Small Desktops and Laptops) */
 
 @media (min-width: 576px) and (max-width: 767px) {
-	
+
 	/* Navigation */
-	
+
 	#mobile-nav-open-btn {
-		
+
 		display: block;
 	}
-	
+
 	#mobile-nav {
-		
+
 		display: block;
 	}
-	
-	
-	
-	
+
+
+
+
 }
 
 /* 3. Medium Devices (Landscape Tablets & Small Desktops and Laptops) */
 
 @media (min-width: 768px) and (max-width: 991px) {
-	
+
 	/* Navbar Brand Heading */
-	
-	
+
+
 }
 
-@media (min-width: 1076px) {
-	
-}
-	
-	
+@media (min-width: 1076px) {}
+
+
 /* 4. Large Devices (Medium Desktops & Laptops) */
-@media (min-width: 992px) and (max-width: 1199px) {
-	
-
-}
+@media (min-width: 992px) and (max-width: 1199px) {}
 
 
 /* 5. Large Devices 1200 (Large Desktops & Laptops) */
 
-@media (min-width: 1200px) and (max-width: 1279px){
-	
-	
-
-}
+@media (min-width: 1200px) and (max-width: 1279px) {}
 
 /* Header Breakpoint. Large Devices 1200 (Large Desktops & Laptops) */
 @media (max-width: 1260px) {
-	
+
 	#navbar-full-text {
-		
+
 		display: none;
 	}
-	
+
 	#navbar-short-text {
-		
+
 		display: inline-block;
 	}
 }
 
 /* 6. Large Devices 1280 (Wide Screens M) */
 
-@media (min-width: 1280px) and (max-width: 1359px){
-	
-
-}
+@media (min-width: 1280px) and (max-width: 1359px) {}
 
 
 /* 7. Large Devices 1366 (Wide Screens L) */
 
-@media (min-width: 1366px) and (max-width: 1439px){
-
-}
+@media (min-width: 1366px) and (max-width: 1439px) {}
 
 /* 8. Large Devices 1440 (Wide Screens XL) */
 
-@media (min-width: 1440px) and (max-width: 1599px){
-
-}
+@media (min-width: 1440px) and (max-width: 1599px) {}
 
 /* 9. Extra Wide Screens 1600  */
 
-@media (min-width: 1600px) and (max-width: 1679px){
-
-}
+@media (min-width: 1600px) and (max-width: 1679px) {}
 
 /* 10. Extra Wide Screens 1680  */
 
-@media (min-width: 1680px) and (max-width: 1919px){
-
-}
+@media (min-width: 1680px) and (max-width: 1919px) {}
 
 /* 11. Extra Wide Screens 1920  */
 
-@media (min-width: 1920px) and (max-width: 2559px){
-
-}
+@media (min-width: 1920px) and (max-width: 2559px) {}
 
 /* 12. Extra Wide Screens 2560  */
 
-@media (min-width: 2560px) {
-
-}
+@media (min-width: 2560px) {}

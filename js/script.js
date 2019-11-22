@@ -2,7 +2,7 @@
 Navigation Bar
 ================================= */
 
-/* $(function ($) {
+ /* $(function ($) {
 	$(document).ready(function () {
 
 		// hide .navbar first
@@ -66,14 +66,10 @@ $(function () {
 	
 	// breakpoint from 768 up
     768 : {
-        items: 2
+        items: 3
     },
     // breakpoint from 992 up
     992 : {
-        items: 3
-    },
-	// breakpoint from 992 up
-    1200 : {
         items: 4
     },
 }
