@@ -151,11 +151,28 @@ $(function () {
 	});
 	
 	
+/* =================================
+Animation
+================================= */
+// Animate on scroll
 
+$(function () {	
+	new WOW().init();
 
+});
 
-
-
+//Animation for Home screen tagline on page load
+$(window).on('load', function() {
+	
+	$("#navlogo").addClass("animated fadeIn");
+	$("#navMenu").addClass("animated fadeIn");
+	$("#navbar-full-text").addClass("animated fadeIn");
+	$("#navbar-short-text").addClass("animated fadeIn");
+	$("#heading-1").addClass("animated fadeInDown");
+	$("#heading-2").addClass("animated fadeInDown");
+	$("#heading-3").addClass("animated fadeInDown");
+	$("#heading-4").addClass("animated fadeInDown");
+});
 
 
 

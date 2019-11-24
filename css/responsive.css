@@ -116,7 +116,7 @@ Media Queries
 /* Heading - Sustainable Returns - Mobile Screens less than 836 */
 
 /* 1. Extra Small Devices (Portrait Phones) */
-@media (max-width: 360px) {
+@media (max-width: 364px) {
 	#heading-container {
 
 		text-align: center;
@@ -129,24 +129,86 @@ Media Queries
 		font-size: calc(20px + (12) * ((100vw - 300px)/(3000 - 300)));
 		line-height: calc(20px + (12) * ((100vw - 300px)/(3000 - 300)));
 	}
+	
+	#heading-1 {
+		display: none;
+	}
+
+	#heading-4 {
+		display: inline;
+	}
+
 }
 
 /* 2. Extra Small Devices (Portrait and Landscape Phones) */
-@media (min-width: 361px) and (max-width: 511px) {
+@media (min-width: 365px) and (max-width: 388px) {
 	#heading-container {
 		text-align: center;
 		position: absolute;
 		top: 10%;
-
 	}
 
 	.home-heading {
 		font-size: calc(21px + (12) * ((100vw - 300px)/(3000 - 300)));
 		line-height: calc(21px + (12) * ((100vw - 300px)/(3000 - 300)));
 	}
+	
+	#heading-1 {
+		display: none;
+	}
+
+	#heading-3 {
+		display: inline;
+	}
+
 
 }
 
+@media (min-width: 389px) and (max-width: 402px) {
+	#heading-container {
+		text-align: center;
+		position: absolute;
+		top: 10%;
+	}
+
+	.home-heading {
+		font-size: calc(21px + (12) * ((100vw - 300px)/(3000 - 300)));
+		line-height: calc(21px + (12) * ((100vw - 300px)/(3000 - 300)));
+	}
+	
+	#heading-1 {
+		display: none;
+	}
+
+	#heading-4 {
+		display: inline;
+	}
+
+
+}
+
+@media (min-width: 403px) and (max-width: 511px) {
+	#heading-container {
+		text-align: center;
+		position: absolute;
+		top: 10%;
+	}
+
+	.home-heading {
+		font-size: calc(21px + (12) * ((100vw - 300px)/(3000 - 300)));
+		line-height: calc(21px + (12) * ((100vw - 300px)/(3000 - 300)));
+	}
+	
+	#heading-1 {
+		display: none;
+	}
+
+	#heading-3 {
+		display: inline;
+	}
+
+
+}
 /* 3. Extra Small Devices (Portrait Tablets and Landscape Phones) */
 @media (min-width: 512px) and (max-width: 548px) {
 	#heading-container {
